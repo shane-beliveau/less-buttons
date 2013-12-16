@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title></title>    
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/buttons.css">
+
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<div class="row">
+
+		    <h1>Standard Colors</h1>
+
+		    <a href="#" class="button red">
+		    	red
+		    </a>
+
+		    <a href="#" class="button orange">
+		    	orange
+		    </a>
+
+		    <a href="#" class="button yellow">
+		    	yellow
+		    </a>
+
+		    <a href="#" class="button green">
+		    	green
+		    </a>
+
+		    <a href="#" class="button blue">
+		    	blue
+		    </a>
+
+		    <a href="#" class="button purple">
+		    	purple
+		    </a>
+
+		    <a href="#" class="button brown">
+		    	brown
+		    </a>
+
+		    <a href="#" class="button white">
+		    	white
+		    </a>
+
+		    <a href="#" class="button gray">
+		    	gray
+		    </a>
+
+		    <a href="#" class="button black">
+		    	black
+		    </a>
+
+		</div>
+
+		<div class="row">
+			
+			<h1>Custom Colors</h1>
+
+			<a href="#" class="button pink">
+		    	pink
+		    </a>
+
+		    <a href="#" class="button magenta">
+		    	magenta
+		    </a>
+
+		    <a href="#" class="button lime">
+		    	lime
+		    </a>
+
+		    <a href="#" class="button aqua">
+		    	aqua
+		    </a>
+
+		    <a href="#" class="button sky">
+		    	sky
+		    </a>
+
+		    <a href="#" class="button slate">
+		    	slate
+		    </a>
+
+		</div>
+
+		<div class="row">
+
+			<h1>Sizes</h1>   
+
+		    <a href="#" class="button gray xxxlarge">
+		    	xxxlarge
+		    </a>
+
+		    <a href="#" class="button gray xxlarge">
+		    	xxlarge
+		    </a>
+
+		    <a href="#" class="button gray xlarge">
+		    	xlarge
+		    </a>
+
+		    <a href="#" class="button gray large">
+		    	large
+		    </a>
+
+		    <a href="#" class="button gray medium">
+		    	medium
+		    </a>
+
+		    <a href="#" class="button gray small">
+		    	small
+		    </a>
+
+		</div>
+
+		<div class="row">
+
+			<h1>Significance</h1>
+
+			<a href="#" class="button green">
+		    	primary
+		    </a>
+
+			<a href="#" class="button secondary">
+		    	secondary
+		    </a>
+
+		    <a href="#" class="button gray tertiary">
+		    	tertiary
+		    </a>
+
+		</div>
+
+		<div class="row">
+			<h1>Button States</h1>
+
+			<a href="#" class="button blue">
+		    	default
+		    </a>
+
+		    <a href="#" class="button blue hover">
+		    	hover
+		    </a>
+
+		    <a href="#" class="button blue active">
+		    	active
+		    </a>
+
+		    <a href="#" class="button blue submit">
+		    	busy
+		    </a>
+
+		    <a href="#" class="button blue disabled">
+		    	disabled
+		    </a>
+
+		</div>
+
+	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    	
+    	$(function() {
+
+            $(document).on('click', '.button', function(e) {
+                e.preventDefault();
+            });
+
+    		$(document).on('click', '.button.submit', function(e) {
+                e.preventDefault();
+    			$(this).html('Loading...').addClass('loading').append('<span class="busy"></span>');
+    		});
+    		
+    	});
+
+    </script>
+
+</body>
+</html>
